@@ -3,9 +3,10 @@ import DotGrid from "../components/DotsGrid.component";
 import GradualBlur from "../components/GradualBlur.component";
 import TextPressure from "../components/TextPressure.component";
 import TextType from "../components/TextType.component";
-import { GithubLogoIcon } from "@phosphor-icons/react";
+import { GithubLogoIcon, LinkedinLogoIcon } from "@phosphor-icons/react";
 import ModelViewer from "../components/ModelViewer.component";
 import { Button } from "@heroui/react";
+import ScrollTextReveal from "../components/ScrollTextReveal.component";
 
 export default function IndexPage() {
   return (
@@ -29,7 +30,7 @@ export default function IndexPage() {
           }}
         >
           <DotGrid
-            dotSize={3}
+            dotSize={4}
             gap={15}
             baseColor="#00163b"
             activeColor="#1e0094"
@@ -82,7 +83,7 @@ export default function IndexPage() {
                   cursorCharacter="_"
                   as="h2"
                 />
-                <div>
+                <div className="flex flex-row gap-4">
                   <Button
                     className="mt-8"
                     style={{
@@ -92,9 +93,36 @@ export default function IndexPage() {
                     variant="shadow"
                     size="lg"
                     startContent={<GithubLogoIcon size={24} weight="duotone" />}
-                    href="https://github.com/mistergooddeal"
+                    onPress={() => {
+                      window.open(
+                        "https://github.com/mistergooddeal",
+                        "_blank"
+                      );
+                    }}
+                    target="_blank"
                   >
-                    GitHub Profile
+                    GitHub
+                  </Button>
+                  <Button
+                    className="mt-8"
+                    style={{
+                      zIndex: 1000,
+                    }}
+                    color="primary"
+                    variant="shadow"
+                    size="lg"
+                    startContent={
+                      <LinkedinLogoIcon size={24} weight="duotone" />
+                    }
+                    onPress={() => {
+                      window.open(
+                        "https://www.linkedin.com/in/milan-c-469071155/",
+                        "_blank"
+                      );
+                    }}
+                    target="_blank"
+                  >
+                    LinkedIn
                   </Button>
                 </div>
               </div>
@@ -131,7 +159,19 @@ export default function IndexPage() {
         />
       </section>
 
-      <section className="dark text-foreground bg-background w-full py-16"></section>
+      <section className="dark text-foreground bg-background w-full p-16">
+        <ScrollTextReveal
+          baseOpacity={0}
+          enableBlur={true}
+          baseRotation={5}
+          blurStrength={10}
+        >
+          Passionate about technology since a young age, I began exploring web
+          technologies early on — tools that have become essential in today's
+          world. That's why I’m eager to put my skills to work and help bring
+          your projects to life!
+        </ScrollTextReveal>
+      </section>
     </DefaultLayout>
   );
 }
