@@ -1,2 +1,311 @@
 @import "tailwindcss";
-@config "../../tailwind.config.js";
+
+@theme {
+  --font-sans: "Outfit", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Syne", ui-sans-serif, system-ui, sans-serif;
+
+  --color-void: #05010d;
+  --color-ink: #0b0618;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: var(--color-void);
+  color: #f4f1fb;
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}
+
+::selection {
+  background: color-mix(in srgb, #22d3ee 35%, transparent);
+  color: white;
+}
+
+:focus-visible {
+  outline: 2px solid #22d3ee;
+  outline-offset: 3px;
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.text-gradient {
+  background: linear-gradient(120deg, #67e8f9 0%, #c4b5fd 45%, #f0abfc 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.glass {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.07) 0%,
+    rgba(255, 255, 255, 0.03) 100%
+  );
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow:
+    0 0 0 1px rgba(124, 58, 237, 0.08),
+    0 24px 80px rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(18px);
+}
+
+.bg-mesh {
+  background:
+    radial-gradient(ellipse 90% 55% at 50% -25%, rgba(109, 40, 217, 0.28), transparent 58%),
+    radial-gradient(ellipse 50% 40% at 100% 0%, rgba(8, 145, 178, 0.16), transparent 50%),
+    radial-gradient(ellipse 45% 35% at 0% 100%, rgba(147, 51, 234, 0.14), transparent 52%),
+    #05010d;
+}
+
+.perspective-stage {
+  perspective: 520px;
+  mask-image: linear-gradient(
+    to bottom,
+    transparent 0%,
+    transparent 42%,
+    black 68%,
+    black 100%
+  );
+}
+
+.perspective-grid {
+  position: absolute;
+  top: 38%;
+  left: -40%;
+  width: 180%;
+  height: 140%;
+  transform: rotateX(58deg);
+  transform-origin: center top;
+  background-image:
+    linear-gradient(rgba(34, 211, 238, 0.16) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(167, 139, 250, 0.12) 1px, transparent 1px);
+  background-size: 64px 64px;
+  animation: grid-scroll 22s linear infinite;
+}
+
+.beam {
+  position: absolute;
+  top: 0;
+  width: 1px;
+  height: 100%;
+  opacity: 0.45;
+  background: linear-gradient(
+    to bottom,
+    transparent 0%,
+    rgba(34, 211, 238, 0.7) 38%,
+    transparent 72%
+  );
+}
+
+.beam-a {
+  left: 14%;
+  animation: beam-pulse 7s ease-in-out infinite;
+}
+
+.beam-b {
+  left: auto;
+  right: 18%;
+  opacity: 0.28;
+  background: linear-gradient(
+    to bottom,
+    transparent 8%,
+    rgba(232, 121, 249, 0.65) 48%,
+    transparent 82%
+  );
+  animation: beam-pulse 9s ease-in-out infinite reverse;
+}
+
+.vignette {
+  background:
+    radial-gradient(ellipse at center, transparent 45%, rgba(5, 1, 13, 0.72) 100%);
+}
+
+@keyframes grid-scroll {
+  to {
+    background-position: 0 64px;
+  }
+}
+
+@keyframes beam-pulse {
+  0%,
+  100% {
+    opacity: 0.22;
+    transform: translateY(-4%);
+  }
+  50% {
+    opacity: 0.55;
+    transform: translateY(4%);
+  }
+}
+
+@keyframes orbit-upright {
+  from {
+    transform: rotate(0deg) translate(var(--orbit-r)) rotate(0deg)
+      translate(-50%, -50%);
+  }
+  to {
+    transform: rotate(360deg) translate(var(--orbit-r)) rotate(-360deg)
+      translate(-50%, -50%);
+  }
+}
+
+@keyframes orbit-upright-rev {
+  from {
+    transform: rotate(0deg) translate(var(--orbit-r)) rotate(0deg)
+      translate(-50%, -50%);
+  }
+  to {
+    transform: rotate(-360deg) translate(var(--orbit-r)) rotate(360deg)
+      translate(-50%, -50%);
+  }
+}
+
+@keyframes pulse-ring {
+  0%,
+  100% {
+    opacity: 0.35;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.7;
+    transform: scale(1.04);
+  }
+}
+
+@keyframes float-y {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.pulse-ring {
+  animation: pulse-ring 4.5s ease-in-out infinite;
+}
+
+.orbit-item {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  animation: orbit-upright var(--orbit-d, 28s) linear infinite;
+  animation-delay: var(--orbit-delay, 0s);
+}
+
+.orbit-item-rev {
+  animation-name: orbit-upright-rev;
+}
+
+.float-y {
+  animation: float-y 6s ease-in-out infinite;
+}
+
+.phone-bezel {
+  position: relative;
+  aspect-ratio: 9 / 19.4;
+  border-radius: 2.35rem;
+  padding: 9px;
+  background: linear-gradient(145deg, #4b4b54 0%, #1c1c22 42%, #0b0b0d 100%);
+  box-shadow:
+    0 28px 60px rgba(0, 0, 0, 0.55),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.16),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+.phone-screen {
+  height: 100%;
+  overflow: hidden;
+  border-radius: 1.75rem;
+  background: #050505;
+}
+
+.phone-screen-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+}
+
+.phone-island {
+  position: absolute;
+  top: 16px;
+  left: 50%;
+  z-index: 2;
+  width: 76px;
+  height: 20px;
+  transform: translateX(-50%);
+  background: #050505;
+  border-radius: 999px;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.08);
+}
+
+.phone-home {
+  position: absolute;
+  bottom: 14px;
+  left: 50%;
+  z-index: 2;
+  width: 86px;
+  height: 4px;
+  transform: translateX(-50%);
+  background: rgba(255, 255, 255, 0.28);
+  border-radius: 999px;
+}
+
+.window-bezel {
+  overflow: hidden;
+  border-radius: 1rem;
+  background: #1a1a22;
+  box-shadow:
+    0 28px 60px rgba(0, 0, 0, 0.5),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.12);
+}
+
+.window-chrome {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 14px;
+  background: linear-gradient(180deg, #2a2a34, #1e1e26);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.window-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+}
+
+.window-screen-img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .orbit-item,
+  .float-y,
+  .pulse-ring,
+  .perspective-grid,
+  .beam-a,
+  .beam-b {
+    animation: none;
+  }
+
+  .orbit-item {
+    transform: rotate(var(--orbit-a, 0deg)) translate(var(--orbit-r))
+      rotate(calc(-1 * var(--orbit-a, 0deg))) translate(-50%, -50%);
+  }
+}
