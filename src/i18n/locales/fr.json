@@ -315,6 +315,6 @@
     "mailFrom": "De : {{name}} <{{email}}>"
   },
   "footer": {
-    "copyright": "© {{year}} {{name}}. Fait avec Vite."
+    "copyright": "© {{year}} {{name}}"
   }
 }
