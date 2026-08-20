@@ -1,0 +1,320 @@
+{
+  "meta": {
+    "title": "Milan Camus — Développeur fullstack",
+    "description": "Portfolio de Milan Camus, développeur fullstack — React, NestJS, TypeScript, mobile et DevOps."
+  },
+  "nav": {
+    "home": "Accueil",
+    "about": "À propos",
+    "experience": "Parcours",
+    "projects": "Projets",
+    "contact": "Contact",
+    "openMenu": "Ouvrir le menu",
+    "closeMenu": "Fermer le menu"
+  },
+  "lang": {
+    "switchTo": "Switch to English",
+    "fr": "FR",
+    "en": "EN"
+  },
+  "hero": {
+    "hello": "Salut, moi c'est",
+    "headline": "Je conçois des apps web, mobile et backend — propres, rapides, maintenables.",
+    "contact": "Me contacter",
+    "projects": "Voir les projets",
+    "scroll": "Scroll",
+    "photoAlt": "{{name}}, développeur fullstack",
+    "roles": [
+      "Développeur fullstack",
+      "React · NestJS · TypeScript",
+      "Mobile · DevOps · IoT"
+    ]
+  },
+  "about": {
+    "eyebrow": "Présentation",
+    "title": "Un profil orienté produit & craft",
+    "bio": "Passionné par l'informatique depuis mon plus jeune âge, j'ai commencé très tôt à m'initier aux technologies du web. Aujourd'hui développeur fullstack, j'accompagne les équipes de l'interface jusqu'à l'infra : React, NestJS, TypeScript, mobile et DevOps.",
+    "avatarAlt": "Memoji de Milan Camus",
+    "stats": [
+      { "value": "6+", "label": "années d'expérience" },
+      { "value": "4", "label": "apps React Native" },
+      { "value": "CDI", "label": "Aubay depuis 2024" }
+    ]
+  },
+  "experience": {
+    "eyebrow": "Parcours",
+    "title": "Expérience & formation",
+    "jobs": [
+      {
+        "company": "Aubay",
+        "period": "Depuis nov. 2024",
+        "title": "Développeur fullstack",
+        "contract": "CDI",
+        "points": [
+          "Apps web en React, Redux et TypeScript",
+          "Backends Node.js / NestJS",
+          "CI/CD GitHub & GitLab, DevOps Oxeva",
+          "Formation interne des collaborateurs sur React"
+        ]
+      },
+      {
+        "company": "Extia",
+        "period": "2023 — 2024",
+        "title": "Développeur fullstack",
+        "contract": "1 an",
+        "points": [
+          "Backends NestJS / TypeScript et Django / Python",
+          "Projet IoT en C et Python, documentation technique",
+          "Management d'une équipe de freelances",
+          "Sujet de recherche autour de Vue.js"
+        ]
+      },
+      {
+        "company": "Bibak",
+        "period": "2020 — 2023",
+        "title": "Alternant développeur fullstack",
+        "contract": "3 ans",
+        "points": [
+          "4 applications mobiles en React Native",
+          "DevOps AWS / IBM Cloud, solutions low-code (WeWeb, Xano)",
+          "Application Java en architecture hexagonale",
+          "Sites web MVC (HTML, CSS, PHP, JS)"
+        ]
+      },
+      {
+        "company": "Indépendant",
+        "period": "2018 — 2020",
+        "title": "Développeur freelance & stages",
+        "contract": "13 mois + stages",
+        "points": [
+          "Missions web fullstack et application Android (Java)",
+          "Stage développeur logiciel — architecture MVC"
+        ]
+      }
+    ],
+    "education": [
+      {
+        "school": "ESGI",
+        "period": "2021 — 2023",
+        "title": "Master Ingénierie du web",
+        "detail": "Diplôme d'ingénieur informatique"
+      },
+      {
+        "school": "ESGI",
+        "period": "2020 — 2021",
+        "title": "Bachelor Ingénierie du web",
+        "detail": "Spécialisation web"
+      },
+      {
+        "school": "IUT de Montreuil",
+        "period": "2018 — 2020",
+        "title": "DUT Informatique",
+        "detail": "Formation en 2 ans"
+      }
+    ]
+  },
+  "projects": {
+    "eyebrow": "Work",
+    "title": "Projets récents",
+    "more": "Découvrir plus",
+    "back": "Retour aux projets",
+    "featured": "À la une",
+    "caseStudy": "Case study",
+    "items": {
+      "turtlecorp-review": "App fullstack de revue collaborative de médias. Annotation vidéo (timeline) et image (pins + 360°), versions, workflow de validation, temps réel et dashboard KPI.",
+      "task-time-tracker": "Extension VS Code qui détecte les tickets dans tes branches Git, suit le temps passé et exporte le mois en XLSX, ODS ou CSV.",
+      "computer-companion": "Agent desktop Electron : API locale pour Home Assistant — media keys, apps, power, auth Bearer. UI React + TypeScript.",
+      "elgato-ambilight": "App desktop macOS / Windows qui transforme les Key Lights en lumière ambiante calée sur l'écran, en temps réel.",
+      "sonoff-esphome": "Guide complet pour flasher un Slampher v2, l'intégrer à Home Assistant, plus un boîtier 3D printable.",
+      "custom-streamdeck": "Stream Deck custom : hardware, firmware et logiciel pour piloter son setup depuis un pad maison.",
+      "geobench": "Application React Native + serveur TypeScript pour du terrain et du géoréférencement, pensée mobile-first.",
+      "glucoscan": "GlucoScan — compteur de glucides mobile (Expo / React Native). Scan, OCR on-device, repas & recettes, stats et widget iOS. Données 100 % locales."
+    },
+    "turtlecorpReview": {
+      "tagline": "Plateforme de review média (vidéo, image, panorama 360°) : player custom, commentaires spatiaux, versions et workflow de validation.",
+      "description": "Turtlecorp Review est un espace de travail fullstack pour organisations : lecture annotée, commentaires ancrés dans le temps ou sur l’image, versions, statuts de validation et partage public. Le front Next.js / React / HeroUI sert d’atelier ; l’API NestJS / PostgreSQL gère le multi-tenant, l’auth JWT, le pipeline média (Sharp, détection 360°) et les notifications Socket.IO.",
+      "featuresTitle": "Fonctionnalités clés",
+      "features": [
+        "Auth production : login, activation, reset, invitations d’orga, JWT access/refresh",
+        "Workspaces multi-tenant : organisations → projets → vidéos / images versionnées",
+        "Review vidéo : player custom, timeline à marqueurs, threads, réactions, raccourcis",
+        "Review image : pins 2D (x/y) et viewer 360° (yaw/pitch) avec hotspots",
+        "Workflow IN_REVIEW / VALIDATED / REJECTED, versions et upload (jusqu’à 10 Go)",
+        "Notifications temps réel Socket.IO et recherche Spotlight type ⌘K",
+        "Liens de partage public pour consulter et commenter sans compte",
+        "Admin & KPI : users, orgs, volumes, médias en review, commentaires non traités"
+      ],
+      "standoutTitle": "Ce qui sort du lot",
+      "standout": [
+        "UX type Frame.io : l’annotation vit dans le média, pas dans un fil générique",
+        "Double viewer image classique + panorama 360° (Photo Sphere Viewer)",
+        "Détection auto des equirectangulaires (ratio + EXIF/XMP : Insta360, Theta, GoPro Max)",
+        "Auth et cache RTK Query côté front, guards JWT / rôles / membership côté API",
+        "Observabilité Sentry, emails Brevo, CI lint / typecheck / tests / build"
+      ],
+      "stackFrontTitle": "Stack front",
+      "stackBackTitle": "Stack back",
+      "galleryTitle": "L’app en images",
+      "screens": {
+        "main": {
+          "title": "Landing",
+          "caption": "Entrée de la plateforme : branding, recherche Spotlight ⌘K et accès au workspace."
+        },
+        "login": {
+          "title": "Authentification",
+          "caption": "Login, activation de compte, mot de passe oublié — JWT access/refresh et rôles."
+        },
+        "video": {
+          "title": "Review vidéo",
+          "caption": "Player custom, timeline avec marqueurs, commentaires timestampés, threads et statuts."
+        },
+        "image": {
+          "title": "Review image",
+          "caption": "Pins 2D ancrés (x/y), réactions, réponses et workflow En revue / Validée / Rejetée."
+        },
+        "pano": {
+          "title": "Panorama 360°",
+          "caption": "Viewer Photo Sphere : navigation yaw/pitch, hotspots cliquables et commentaires spatiaux."
+        },
+        "dashboard": {
+          "title": "Dashboard KPI",
+          "caption": "Volumes clients / projets / médias, files de validation et commentaires à traiter."
+        },
+        "clients": {
+          "title": "Organisation",
+          "caption": "Fiche client, membres, invitations et projets — le cœur du modèle multi-tenant."
+        },
+        "users": {
+          "title": "Admin utilisateurs",
+          "caption": "Table filtrable : rôles, statuts, CRUD — guards JWT et membership d’organisation."
+        }
+      }
+    },
+    "taskTimeTracker": {
+      "tagline": "Extension VS Code pour suivre le temps passé sur les tâches, directement depuis tes branches Git.",
+      "description": "Task Time Tracker détecte automatiquement les IDs de tickets dans les noms de branches (Jira, GitHub Issues, Linear…) et calcule le temps passé avec précision. Pause et reprise à chaque changement de branche, heures de travail et jours off configurables, suivi en temps réel. Export mensuel en XLSX, ODS ou CSV. Interface FR/EN, stockage workspace ou user.",
+      "featuresTitle": "Fonctionnalités clés",
+      "features": [
+        "Détection auto des tickets dans les branches Git (préfixes configurables)",
+        "Compatible Jira, GitHub Issues, Linear et tout système à URL",
+        "Calcul précis (jours, heures, minutes) avec incrément configurable",
+        "Pause / reprise auto au changement de branche",
+        "Heures de travail, format 12h/24h et jours off",
+        "Panel dans Source Control, suivi mensuel repliable",
+        "Export spreadsheet XLSX / ODS / CSV, ouverture auto optionnelle",
+        "i18n FR / EN, stockage workspace ou user, migration en un clic"
+      ],
+      "standoutTitle": "Ce qui sort du lot",
+      "standout": [
+        "Intégré au workflow Git / Source Control, pas un timer à part",
+        "Fusion intelligente des sessions pour éviter le double comptage",
+        "Reporting prêt pour le mois : ticket, auteur, temps, statut",
+        "Extension VS Code publiée sur le Marketplace"
+      ],
+      "stackTitle": "Stack",
+      "galleryTitle": "L’extension en images",
+      "screens": {
+        "showcase": {
+          "title": "Suivi dans Source Control",
+          "caption": "Tickets détectés depuis la branche, statut en cours / terminé, et données persistées dans settings.json."
+        },
+        "increment": {
+          "title": "Incréments & horaires",
+          "caption": "Arrondi configurable (0.1, 0.2, 0.5…), heures de début/fin et formats 12h / 24h."
+        },
+        "excel": {
+          "title": "Export spreadsheet",
+          "caption": "XLSX, ODS ou CSV, chemin de sortie et app pour ouvrir le fichier (Excel, Numbers…)."
+        }
+      }
+    },
+    "glucoscan": {
+      "tagline": "Application mobile iOS/Android pour compter les glucides au quotidien : scan de codes-barres, OCR d’étiquettes, repas et recettes, le tout hors ligne et sans compte.",
+      "description": "GlucoScan aide les personnes qui suivent leur glycémie à savoir combien de glucides elles mangent, sans retaper les étiquettes à la main. On scanne un code-barres (Open Food Facts), on photographie une étiquette (OCR on-device), ou on compose un repas / une recette avec conversions cru ↔ cuit. Les stats (heatmap, totaux par période) et un widget iOS affichent le bilan du jour. Les données restent locales (SQLite), avec import/export. Stack : Expo 56, React Native, TypeScript, WidgetKit, Zustand.",
+      "highlights": [
+        "Scan code-barres Open Food Facts",
+        "OCR d’étiquettes 100 % on-device",
+        "Repas, recettes et conversion cru ↔ cuit",
+        "Widget iOS + stats (heatmap)",
+        "Données locales, sans compte ni backend"
+      ],
+      "featuresTitle": "Fonctionnalités clés",
+      "features": [
+        "Catalogue produits : glucides/100 g, unités perso, tags, photos, codes EAN",
+        "Scan code-barres + recherche Open Food Facts (avec rate-limit)",
+        "OCR d’étiquettes on-device (ML Kit / Apple Vision) — rien n’est envoyé au cloud",
+        "Repas : journal par jour, quantités en g ou en unités",
+        "Compositions : recettes réutilisables dans les repas",
+        "Conversion cru/cuit (riz, pâtes…) pour des glucides plus justes",
+        "Stats : heatmap, glucides journaliers, filtres par période / catégorie",
+        "Widget iOS (WidgetKit + App Group) : snapshot glucides sur l’écran d’accueil",
+        "FR / EN, thème, unités g / oz, tutoriel, import/export"
+      ],
+      "standoutTitle": "Ce qui sort du lot",
+      "standout": [
+        "App native-adjacent : module gluco-widget-bridge, App Groups iOS, WidgetKit",
+        "Vie privée : OCR et base 100 % appareil, pas de backend",
+        "Métier précis : glucides + conversion culinaire, pas un simple tracker calories",
+        "Archi soignée : features, repositories, stores Zustand, design system (atoms → templates)"
+      ],
+      "stackTitle": "Stack",
+      "galleryTitle": "L’app en images",
+      "screens": {
+        "products": {
+          "title": "Catalogue produits",
+          "caption": "Glucides / 100 g, photos, codes EAN et historique d’utilisation — le garde-manger de l’app."
+        },
+        "meals": {
+          "title": "Journal des repas",
+          "caption": "Petit-déj, déjeuner, dîner : quantités en g ou en unités, totaux du jour."
+        },
+        "menus": {
+          "title": "Menus & recettes",
+          "caption": "Compositions réutilisables à insérer d’un tap dans un repas."
+        },
+        "stats": {
+          "title": "Statistiques",
+          "caption": "Heatmap, totaux, moyenne / jour et tendances filtrées par période."
+        },
+        "settings": {
+          "title": "Réglages",
+          "caption": "Thème, unités g / oz, langue FR/EN, conversions de cuisson, import/export local."
+        },
+        "widgets": {
+          "title": "Widgets iOS",
+          "caption": "Snapshot glucides et raccourcis + Aliment / + Repas, via WidgetKit et App Groups."
+        }
+      }
+    }
+  },
+  "skills": {
+    "eyebrow": "Stack",
+    "title": "Outils du quotidien",
+    "groups": {
+      "frontend": "Frontend",
+      "languages": "Langages",
+      "backend": "Backend",
+      "data": "Data",
+      "devops": "DevOps",
+      "iot": "IoT",
+      "design": "Design"
+    }
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "title": "Un projet, une mission ?",
+    "subtitle": "Écris-moi — je réponds dès que possible.",
+    "email": "Email",
+    "phone": "Téléphone",
+    "location": "Localisation",
+    "name": "Nom",
+    "subject": "Sujet",
+    "message": "Message",
+    "send": "Envoyer le message",
+    "defaultSubject": "Contact portfolio",
+    "mailFrom": "De : {{name}} <{{email}}>"
+  },
+  "footer": {
+    "copyright": "© {{year}} {{name}}. Fait avec Vite."
+  }
+}
