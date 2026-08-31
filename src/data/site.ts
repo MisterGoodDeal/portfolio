@@ -6,6 +6,7 @@ export const site = {
   phoneHref: "tel:+33652728514",
   github: "https://github.com/MisterGoodDeal",
   linkedin: "https://www.linkedin.com/in/milan-c-469071155/",
+  cv: "/cv-milan-camus-avril-2026.pdf",
 };
 
 export const navItems = [
