@@ -21,6 +21,7 @@
     "hello": "Hi, I'm",
     "headline": "I build web, mobile and backend apps — clean, fast, maintainable.",
     "contact": "Get in touch",
+    "downloadCv": "Download my CV",
     "projects": "See projects",
     "scroll": "Scroll",
     "photoAlt": "{{name}}, fullstack developer",
@@ -37,7 +38,6 @@
     "avatarAlt": "Memoji of Milan Camus",
     "stats": [
       { "value": "6+", "label": "years of experience" },
-      { "value": "4", "label": "React Native apps" },
       { "value": "CDI", "label": "Aubay since 2024" }
     ]
   },
@@ -307,6 +307,8 @@
     "email": "Email",
     "phone": "Phone",
     "location": "Location",
+    "cv": "Resume",
+    "downloadCv": "Download PDF",
     "name": "Name",
     "subject": "Subject",
     "message": "Message",
