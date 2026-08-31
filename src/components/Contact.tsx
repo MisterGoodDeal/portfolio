@@ -1,4 +1,9 @@
-import { EnvelopeSimple, MapPin, Phone } from "@phosphor-icons/react";
+import {
+  EnvelopeSimple,
+  FileArrowDown,
+  MapPin,
+  Phone,
+} from "@phosphor-icons/react";
 import { FormEvent, useState } from "react";
 import { useTranslation } from "react-i18next";
 
@@ -28,9 +33,10 @@ export default function Contact() {
       className="relative z-10 mx-auto max-w-6xl px-6 py-24"
       id="contact"
     >
-      <SectionHeading eyebrow={t("contact.eyebrow")} title={t("contact.title")}>
-        {t("contact.subtitle")}
-      </SectionHeading>
+      <SectionHeading
+        eyebrow={t("contact.eyebrow")}
+        title={t("contact.title")}
+      />
 
       <div className="grid gap-8 lg:grid-cols-[0.85fr_1.15fr]">
         <div className="space-y-4">
@@ -71,6 +77,23 @@ export default function Contact() {
               <p>{site.location}</p>
             </div>
           </div>
+          <a
+            className="glass flex items-center gap-4 rounded-3xl p-5 transition-colors hover:bg-white/5"
+            download
+            href={site.cv}
+          >
+            <FileArrowDown
+              className="text-emerald-300"
+              size={24}
+              weight="duotone"
+            />
+            <div>
+              <p className="text-xs tracking-widest text-white/45 uppercase">
+                {t("contact.cv")}
+              </p>
+              <p>{t("contact.downloadCv")}</p>
+            </div>
+          </a>
         </div>
 
         <form
