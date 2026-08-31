@@ -63,10 +63,11 @@
         "title": "Fullstack developer",
         "contract": "1 year",
         "points": [
-          "NestJS / TypeScript and Django / Python backends",
-          "IoT project in C and Python, technical docs",
-          "Managed a freelance team",
-          "Research topic around Vue.js"
+          "Web development in Angular & TypeScript",
+          "Backend applications in Node.js (NestJS) and TypeScript",
+          "Backend applications in Python (Django)",
+          "Low-code solutions (WeWeb and Xano)",
+          "AWS / IBM Cloud DevOps"
         ]
       },
       {
@@ -75,10 +76,10 @@
         "title": "Fullstack developer apprentice",
         "contract": "3 years",
         "points": [
-          "4 React Native mobile apps",
-          "AWS / IBM Cloud DevOps, low-code (WeWeb, Xano)",
-          "Java app with hexagonal architecture",
-          "MVC websites (HTML, CSS, PHP, JS)"
+          "Development of 4 mobile applications in React Native",
+          "Backend applications in Node.js & TypeScript",
+          "Freelance team management",
+          "IoT project in C and Python"
         ]
       },
       {
@@ -87,8 +88,11 @@
         "title": "Freelance developer & internships",
         "contract": "13 months + internships",
         "points": [
-          "Fullstack web work and an Android app (Java)",
-          "Software engineering internship — MVC architecture"
+          "Java application with hexagonal architecture",
+          "Technical product documentation",
+          "Research topic on Vue.js",
+          "MVC website (HTML, CSS, PHP and JS)",
+          "Android mobile application in Java"
         ]
       }
     ],

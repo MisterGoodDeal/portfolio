@@ -63,10 +63,11 @@
         "title": "Développeur fullstack",
         "contract": "1 an",
         "points": [
-          "Backends NestJS / TypeScript et Django / Python",
-          "Projet IoT en C et Python, documentation technique",
-          "Management d'une équipe de freelances",
-          "Sujet de recherche autour de Vue.js"
+          "Développement web en Angular & TypeScript",
+          "Développement d'applications back end en Node.js (NestJS) et TypeScript",
+          "Développement d'applications back end en Python (Django)",
+          "Développement de solutions low code (WeWeb et Xano)",
+          "DevOps AWS / IBM Cloud"
         ]
       },
       {
@@ -75,10 +76,10 @@
         "title": "Alternant développeur fullstack",
         "contract": "3 ans",
         "points": [
-          "4 applications mobiles en React Native",
-          "DevOps AWS / IBM Cloud, solutions low-code (WeWeb, Xano)",
-          "Application Java en architecture hexagonale",
-          "Sites web MVC (HTML, CSS, PHP, JS)"
+          "Développement de 4 applications mobiles en React Native",
+          "Développement d'applications back end en Node.js & TypeScript",
+          "Gestion et management d'une équipe de freelance",
+          "Développement d'un projet IoT en C et Python"
         ]
       },
       {
@@ -87,8 +88,11 @@
         "title": "Développeur freelance & stages",
         "contract": "13 mois + stages",
         "points": [
-          "Missions web fullstack et application Android (Java)",
-          "Stage développeur logiciel — architecture MVC"
+          "Développement d'une application Java en architecture hexagonale",
+          "Création d'une documentation technique liée au produit",
+          "Sujet de recherche sur Vue.js",
+          "Développement site web architecture MVC (HTML, CSS, PHP et JS)",
+          "Développement d'une application mobile en Java pour Android"
         ]
       }
     ],
