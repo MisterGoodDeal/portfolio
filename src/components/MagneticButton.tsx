@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 type Props = ButtonHTMLAttributes<HTMLButtonElement> & {
   href?: string;
   to?: string;
+  download?: string | true;
   children: ReactNode;
   variant?: "primary" | "ghost";
 };
@@ -13,6 +14,7 @@ type Props = ButtonHTMLAttributes<HTMLButtonElement> & {
 export default function MagneticButton({
   href,
   to,
+  download,
   children,
   className,
   variant = "primary",
@@ -36,7 +38,7 @@ export default function MagneticButton({
 
   if (href) {
     return (
-      <a className={classes} href={href}>
+      <a className={classes} download={download} href={href}>
         {children}
       </a>
     );
