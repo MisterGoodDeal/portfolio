@@ -1,4 +1,9 @@
-import { ArrowDown, GithubLogo, LinkedinLogo } from "@phosphor-icons/react";
+import {
+  ArrowDown,
+  FileArrowDown,
+  GithubLogo,
+  LinkedinLogo,
+} from "@phosphor-icons/react";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
@@ -80,6 +85,10 @@ export default function Hero() {
             <MagneticButton href="#contact">{t("hero.contact")}</MagneticButton>
             <MagneticButton href="#projects" variant="ghost">
               {t("hero.projects")}
+            </MagneticButton>
+            <MagneticButton download href={site.cv} variant="ghost">
+              <FileArrowDown size={18} weight="duotone" />
+              {t("hero.downloadCv")}
             </MagneticButton>
           </div>
           <div className="mt-8 flex items-center gap-4 text-white/70">
