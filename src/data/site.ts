@@ -1,6 +1,6 @@
 export const site = {
   name: "Milan Camus",
-  location: "Montreuil · Paris",
+  location: "Nanterre · Paris",
   email: "mcamus.dev@gmail.com",
   phone: "+33 6 52 72 85 14",
   phoneHref: "tel:+33652728514",
